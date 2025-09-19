@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Splitter - Settlement</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    .summary {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>💰 Settlement Summary</h1>
+
+  <div class="card" id="settlementCard">
+    <div id="summaryDiv" class="summary"></div>
+    <table id="settlementTable">
+      <thead>
+      <tr>
+        <th>From</th>
+        <th>To</th>
+        <th>Amount (₹)</th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <button onclick="goBack()">⬅ Back to Share Expense</button>
+</div>
+
+<script src="settlement.js"></script>
+</body>
+</html>

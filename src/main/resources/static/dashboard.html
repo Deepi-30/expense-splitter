@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Splitter - Add Expense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>💰 Expense Splitter</h1>
+
+  <!-- Expense Card -->
+  <div class="card">
+    <h2>Add Expense</h2>
+    <form id="expenseForm">
+      <input type="text" id="expenseDescription" placeholder="Description" required />
+      <input type="number" id="expenseAmount" placeholder="Total Amount" min="0" step="0.01" required />
+      <button type="submit">Add Expense</button>
+    </form>
+    <p id="expenseMessage" class="message"></p>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

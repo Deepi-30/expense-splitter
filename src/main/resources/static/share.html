@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Splitter - Share Expense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>💰 Expense Splitter</h1>
+
+  <div class="card">
+    <h2>Expense Shares</h2>
+
+    <!-- Step 1: Enter number of persons -->
+    <div id="numPersonsDiv">
+      <label for="numPersons">Number of Persons:</label>
+      <input type="number" id="numPersons" min="1" required>
+      <button id="setPersonsBtn">Set</button>
+    </div>
+
+    <!-- Step 2: Dynamic input fields for each person -->
+    <form id="shareForm" style="display:none; margin-top:20px;">
+      <div id="shareInputs"></div>
+      <button type="submit">Calculate Settlement</button>
+    </form>
+
+    <p id="shareMessage" class="message"></p>
+  </div>
+</div>
+
+<script src="share.js"></script>
+</body>
+</html>
