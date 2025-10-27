@@ -20,14 +20,14 @@ if (loginForm) {
       const user = await res.json();
 
       document.getElementById("loginMessage").textContent =
-        "✅ Login successful!";
+        " Login successful!";
       localStorage.setItem("user", JSON.stringify(user));
 
       // Redirect to dashboard
       setTimeout(() => (window.location.href = "dashboard.html"), 1000);
     } catch (err) {
       document.getElementById("loginMessage").textContent =
-        "❌ Invalid credentials";
+        " Invalid credentials";
       document.getElementById("loginMessage").style.color = "red";
     }
   });
