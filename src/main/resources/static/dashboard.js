@@ -32,7 +32,7 @@ if (expenseForm) {
       const expense = await res.json();
 
       document.getElementById("expenseMessage").textContent =
-        "✅ Expense added! Redirecting to add shares...";
+        " Expense added! Redirecting to add shares...";
 
       // Save expense ID for the next page
       localStorage.setItem("currentExpenseId", expense.id);
@@ -42,7 +42,7 @@ if (expenseForm) {
 
     } catch (err) {
       document.getElementById("expenseMessage").textContent =
-        "❌ Failed to add expense. Try again.";
+        " Failed to add expense. Try again.";
       document.getElementById("expenseMessage").style.color = "red";
     }
   });
